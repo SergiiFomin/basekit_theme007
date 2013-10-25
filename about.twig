@@ -1,0 +1,336 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class=row>
+
+                    <article class="span5">
+
+                        <h1 class="brand">
+
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                    <article class="span7">
+
+                        <div class="nav-collapse nav-collapse_ collapse">
+
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <!--content-->
+
+        <div class="container">
+            <div class="row">
+                <article class="span12">
+
+                    {{widget('space', 'space', {'height': '48'})|raw}}
+
+                    <div class="row divider3">
+
+                        <article class="span6">
+
+                            {{widget('content', 'title1', {content: '<h3>about us</h3>', lines: 'all'})|raw}}
+
+                            {{widget('image', 'left', { 'src': asset('images/page2-img1.jpg'), 'fileSize': '58kb', 'imageSize': '240 x 230', 'imageWidth': '240px'})|raw}}
+
+                            <div class="overflow">
+
+                                {{widget('content', 'post-title1', {content: '<h4>Pellentesque vitae tortor id neque fermentum pretium quam erat.</h4>', lines: 'all'})|raw}}
+
+                                {{widget('content', 'about-text1', {content: '<p>Donec justo tellus, tincidunt vitae pellentesque nec, pharetra a orci. Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui ut porta. Aenean laoreet viverra turpis, a commodo purus eleifend a. Nam lacus dui; egestas ut aliquam nec, eleifend sit amet est.</p>', lines: 'all'})|raw}}
+
+                                {{widget('button', 'button1', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </div>
+
+                            {{zone('main')|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            {{widget('content', 'title1', {content: '<h3>our team</h3>', lines: 'all'})|raw}}
+
+                            <div class="row">
+
+                                <article class="span3">
+
+                                    <ul class="event">
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img5.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'Bradley Grosh', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img6.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'Olivia Tompson', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img7.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'John McCoist', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                </article>
+
+                                <article class="span3">
+
+                                    <ul class="event">
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img8.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'Bradley Grosh', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img9.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'Olivia Tompson', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            {{widget('image', 'left', { 'src': asset('images/page2-img10.jpg'), 'fileSize': '58kb', 'imageSize': '120 x 120', 'imageWidth': '120px'})|raw}}
+
+                                            {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                            <div class="overflow">
+
+                                                {{widget('content', 'date_span1', {content: 'John McCoist', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_span1', {content: 'Pent vestibulum molestie lacumy.', lines: 'all'})|raw}}
+
+                                                {{widget('content', 'event_text1', {content: '<p>Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                </article>
+
+                            </div>
+
+                        </article>
+                        <article class="span1"></article>
+                        <article class="span5">
+
+                            {{widget('content', 'title2', {content: '<h3>testimonials</h3>', lines: 'all'})|raw}}
+
+                            <ul class="event">
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page2-img2.jpg'), 'fileSize': '58kb', 'imageSize': '100 x 100', 'imageWidth': '100px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'event_span1', {content: '<blockquote>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nullaunc iaculis ligula eget massa dictum quis porttitor orci elementum cilisi.</blockquote>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'uppercase', {content: 'Anthony Priston', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'color', {content: ', 22 years', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page2-img3.jpg'), 'fileSize': '58kb', 'imageSize': '100 x 100', 'imageWidth': '100px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'event_span1', {content: '<blockquote>Curabitur lacinia tristique imperdiet. Aenean bibendum vehicula diam nec placerat. Donec lectus leo, consequat sit amet viverra et, lacinurna eu dolor volutpat lobortis! Curabitur pellentesque, turpis lectus.</blockquote>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'uppercase', {content: 'Helen Tompson', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'color', {content: ', 25 years', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page2-img4.jpg'), 'fileSize': '58kb', 'imageSize': '100 x 100', 'imageWidth': '100px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'event_span1', {content: '<blockquote>Aliquam erat volutpat. Proin eu purus sapien, eu accumsan dolor. Nuncerat vehicula sed. Phasellus hendrerit dapibus libero, non malesu iaculis ligula eget massa dictum quis porttitor orci elementum.</blockquote>', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'uppercase', {content: 'Alan Smith', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'color', {content: ', 19 years', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                            {{widget('button', 'button2', {italic: false, text:'all testimonials', 'align':'widget-align-left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '70'})|raw}}
+
+                            <div id="shedule">
+
+                                <div class="indent">
+
+                                    {{widget('image', 'original', { 'src': asset('images/cup-image.png'), 'fileSize': '58kb', 'imageSize': '68 x 69', 'imageWidth': '68px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'cup-text', {content: '<span>Questions and food ordering:</span><strong>+1 800 123-4567</strong><a href="#">info@demolink.org</a>', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </div>
+
+                                <div class="inner">
+
+                                    {{widget('content', 'content', {content: 'Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pellentesque vitae tortor id neque ', lines: 'all'})|raw}}
+
+                                </div>
+
+                            </div>
+
+                        </article>
+                        
+                    </div>
+
+                    {{widget('space', 'space', {'height': '40'})|raw}}
+
+                </article>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+
+                        <article class="span8">
+
+                            {{widget('companyname', 'companyname', {"business": "Rosso"})|raw}}
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp; All Rights Reserved &nbsp; | &nbsp; ', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+                            {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
+
+                            {{widget('content', 'phone_text', {content: 'call us for reservation', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+                            
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}

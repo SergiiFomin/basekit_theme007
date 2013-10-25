@@ -1,0 +1,311 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class=row>
+
+                    <article class="span5">
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                    <article class="span7">
+
+                        <div class="nav-collapse nav-collapse_ collapse">
+
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <!--content-->
+
+        <div class="container">
+
+            <div class="row">
+
+                <article class="span12">
+
+                    {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': false, 'showBullets': true, 'allowPause': false, 'allowLoop': false, 'images':[{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/350x1112', 'title':'test title', 'description': 'test desc'}]})|raw}}
+
+                    {{widget('space', 'space', {'height': '70'})|raw}}
+                            
+                    {{zone('main')|raw}}
+
+                    <div class="row divider2">
+
+                        <article class="span7">
+
+                            <div class="row">
+
+                                <article class="span3">
+
+                                    <div id="shedule">
+
+                                        <div class="indent">
+
+                                            <label>We are waiting for you:</label>
+
+                                        </div>
+
+                                        <div class="inner">
+
+                                            <ul class="shedule">
+
+                                                <li>
+
+                                                    {{widget('content', 'name1', {content: 'main menu:', lines: 'all'})|raw}}
+                                                    {{widget('content', 'time1', {content: '12am - 12pm', lines: 'all'})|raw}}
+
+                                                </li>
+
+                                                <li>
+
+                                                    {{widget('content', 'name2', {content: 'breakfast:', lines: 'all'})|raw}}
+                                                    {{widget('content', 'time2', {content: '8am - 11am', lines: 'all'})|raw}}
+
+                                                </li>
+
+                                                <li>
+
+                                                    {{widget('content', 'name3', {content: 'Live music:', lines: 'all'})|raw}}
+                                                    {{widget('content', 'time3', {content: '8pm - 11pm', lines: 'all'})|raw}}
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                                <article class="span4">
+
+                                    {{widget('content', 'title1', {content: '<h2>Welcome</h2>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'text1', {content: 'Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'text2', {content: '<p>Pent vestibulum molestie lacus. Aenean nonumy. Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'text3', {content: '<p>Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus.</p>', lines: 'all'})|raw}}
+
+                                    {{widget('space', 'space', {'height': '40'})|raw}}
+
+                                </article>
+
+                            </div>
+
+                            <div class="row divider1">
+
+                                <article class="span3">
+
+                                    {{widget('content', 'title2', {content: '<h3>testimonials</h3>', lines: 'all'})|raw}}
+                                    
+                                    {{widget('content', 'blockquote', {content: '<blockquote>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.</blockquote>', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'uppercase', {content: 'Anthony Priston', lines: 'all'})|raw}}
+
+                                    {{widget('content', 'color', {content: ', 22 years', lines: 'all'})|raw}}                                  
+
+                                </article>
+
+                                <article class="span1"></article>
+
+                                <article class="span3">
+
+                                    {{widget('content', 'title3', {content: '<h3>most popular</h3>', lines: 'all'})|raw}}
+
+                                    <ul class="price">
+
+                                        <li>
+                                            
+                                            {{widget('content', 'price1', {content: '<span>$12.00</span>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'price_name1', {content: '<em>Quisque nulla</em>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'indent1', {content: '<strong>&nbsp;</strong>', lines: 'all'})|raw}}
+
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            {{widget('content', 'price2', {content: '<span>$17.00</span>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'price_name2', {content: '<em>Vestibulum libero</em>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'indent2', {content: '<strong>&nbsp;</strong>', lines: 'all'})|raw}}
+
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            {{widget('content', 'price3', {content: '<span>$24.50</span>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'price_name3', {content: '<em>Scelerisque</em>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'indent3', {content: '<strong>&nbsp;</strong>', lines: 'all'})|raw}}
+
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            {{widget('content', 'price4', {content: '<span>$11.00</span>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'price_name4', {content: '<em>Malesuada neque</em>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'indent4', {content: '<strong>&nbsp;</strong>', lines: 'all'})|raw}}
+
+                                        </li>
+                                        
+                                        <li>
+                                            
+                                            {{widget('content', 'price5', {content: '<span>$7.00</span>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'price_name5', {content: '<em>Vivamus eget</em>', lines: 'all'})|raw}}
+                                            
+                                            {{widget('content', 'indent5', {content: '<strong>&nbsp;</strong>', lines: 'all'})|raw}}
+
+                                        </li>
+
+                                    </ul>
+
+                                </article>
+
+                            </div>
+
+                        </article>
+
+                        <article class="span1"></article>
+
+                        <article class="span4">
+
+                            {{widget('content', 'title4', {content: '<h3>Resent events</h3>', lines: 'all'})|raw}}
+
+                            <ul class="event">
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page1-img1.jpg'), 'fileSize': '58kb', 'imageSize': '140 x 140', 'imageWidth': '140px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'date_span1', {content: 'Oct 12, 2012', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_span1', {content: 'Fusce feugiat maleda odio nonummy', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_text1', {content: '<p>Pent vestibulum molestie lacus. Aenean nonumy. Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page1-img2.jpg'), 'fileSize': '58kb', 'imageSize': '140 x 140', 'imageWidth': '140px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'date_span2', {content: 'Oct 12, 2012', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_span2', {content: 'Fusce feugiat maleda odio nonummy', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_text2', {content: '<p>Pent vestibulum molestie lacus. Aenean nonumy. Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    {{widget('image', 'left', { 'src': asset('images/page1-img3.jpg'), 'fileSize': '58kb', 'imageSize': '140 x 140', 'imageWidth': '140px'})|raw}}
+
+                                    <div class="overflow">
+
+                                        {{widget('content', 'date_span3', {content: 'Oct 12, 2012', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_span3', {content: 'Fusce feugiat maleda odio nonummy', lines: 'all'})|raw}}
+
+                                        {{widget('content', 'event_text3', {content: '<p>Pent vestibulum molestie lacus. Aenean nonumy. Fusce suscipit varius mi. Fusce feugiat.</p>', lines: 'all'})|raw}}
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+
+                            {{widget('button', 'button1', {italic: false, text:'More', 'align':'widget-align-left'})|raw}}
+
+                        </article>
+
+
+                    </div>
+                    
+                    {{widget('space', 'space', {'height': '40'})|raw}}
+
+                </article>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+
+                        <article class="span8">
+
+                            {{widget('companyname', 'companyname', {"business": "Rosso"})|raw}}
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp; All Rights Reserved &nbsp; | &nbsp; ', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+                            {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
+
+                            {{widget('content', 'phone_text', {content: 'call us for reservation', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}

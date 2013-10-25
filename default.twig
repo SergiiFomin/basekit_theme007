@@ -1,0 +1,93 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class=row>
+
+                    <article class="span5">
+
+                        <h1 class="brand">
+                            
+                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </h1>
+
+                    </article>
+
+                    <article class="span7">
+
+                        <div class="nav-collapse nav-collapse_ collapse">
+
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="global">
+
+        <!--content-->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <article class="span12">
+                        {{zone('main')|raw}}
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+
+                        <article class="span8">
+
+                            {{widget('companyname', 'companyname', {"business": "Rosso"})|raw}}
+
+                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp; All Rights Reserved &nbsp; | &nbsp; ', lines: 'all'})|raw}}
+
+                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                        <article class="span4">
+                            {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
+
+                            {{widget('content', 'phone_text', {content: 'call us for reservation', lines: 'all'})|raw}}
+
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+                            
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+{% endblock %}
