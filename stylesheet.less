@@ -858,7 +858,7 @@ ul.price{
     color: @color-swatch1;
     list-style: none;
     margin-bottom: 7px;
-    strong{
+    div[class$="content-indent1"], div[class$="content-indent2"], div[class$="content-indent3"], div[class$="content-indent4"], div[class$="content-indent5"]{
       background-image:image('/images/template/line-hor.gif');
       background-position: 0 17px;
       background-repeat: repeat-x;
@@ -866,12 +866,12 @@ ul.price{
       display: block; 
       overflow: hidden;
     }
-    span{
+    div[class$="price1"], div[class$="price2"], div[class$="price3"], div[class$="price4"], div[class$="price5"]{
       font: bold 14px/20px 'Lora', serif;
       float: right;
       color: @color-swatch3;
     }
-    em{
+    div[class$="price_name1"], div[class$="price_name2"], div[class$="price_name3"], div[class$="price_name4"], div[class$="price_name5"]{
       float: left; 
       text-decoration: none;
       color: @color-swatch1;
