@@ -492,7 +492,7 @@ body{
   display: block;
   margin-bottom: 15px;
 }
-.img-intro__left{
+div[id$="image-left"]{
   float: left;
   margin: 0 20px 15px 0;
 }
@@ -963,17 +963,15 @@ ul.event{
     margin: 0 0 0px;
     overflow: hidden;
     color: @color-swatch3;
-    #date_span1,#date_span2,#date_span3{
+    div[id$="date_span1"], div[id$="date_span2"], div[id$="date_span3"] {
       font: bold 14px/20px 'Lora', serif;
       color: @color-swatch3;
     }    
-    div[id$="event_text1"],div[id$="event_text2"],div[id$="event_text3"]{
-
-    }
+    div[id$="event_text1"],div[id$="event_text2"],div[id$="event_text3"]{}
   }
 }
 
-/*div[id$="text1"],*/div[id$="event_span1"],div[id$="event_span2"],div[id$="event_span3"]{
+div[id$="home-text1"], div[id$="event_span1"], div[id$="event_span2"], div[id$="event_span3"]{
   font-size: 14px;
   line-height: 20px;
   color: @color-swatch1;
