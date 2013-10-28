@@ -47,12 +47,18 @@
                 <div class="row">
                     <section class="span12">
 
+                        {{widget('space', 'space', {'height': '40'})|raw}}
+
                         {{widget('map', 'map', {'height': '470', 'zoom': '15', 'address': 'profile'})|raw}}
 
                         <div class="row divider1">
 
                             <article class="span3">
+
+                                {{widget('space', 'space', {'height': '40'})|raw}}
+
                                 {{widget('companyaddress', 'companyaddress', {})|raw}}
+
                             </article>
 
                             <article class="span1">
@@ -60,7 +66,11 @@
                             </article>
 
                             <article class="span8">
+
+                                {{widget('space', 'space', {'height': '40'})|raw}}
+
                                 {{zone('main')|raw}}
+                                
                             </article>
 
                         </div>
