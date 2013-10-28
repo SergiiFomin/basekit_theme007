@@ -1037,6 +1037,7 @@ div[id$="phone_text"]{
   ul.event{
     li{
       .widget.image{
+        display: inline-block;
         float: none;
         margin-right: 0;
       }
@@ -1044,6 +1045,12 @@ div[id$="phone_text"]{
   }
   div[id$="phone"] {
     font-size: 30px;
+  }
+  .about{
+    div[id$="image-left"] {
+      float: none;
+      margin-right: 0;
+    }
   }
 }
 
@@ -1058,7 +1065,16 @@ div[id$="phone_text"]{
 ========================================================================*/
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px){}
+@media (max-width: 767px){
+  ul.event{
+    li{
+      .widget.image{
+        float: left;
+        margin-right: 20px;
+      }
+    }
+  }
+}
 
 /*== Up to 640px ==================================================
 ====================================================================*/
