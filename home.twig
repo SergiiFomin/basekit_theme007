@@ -287,11 +287,12 @@
         <div class="container">
             <div class="row">
                 <section class="span12">
+
                     <div class="row">
 
-                        <article class="span8">
+                        {{widget('space', 'space', {'height': '40'})|raw}}
 
-                            {{widget('space', 'space', {'height': '40'})|raw}}
+                        <article class="span8">
 
                             {{widget('companyname', 'companyname', {"business": "Rosso"})|raw}}
 
@@ -304,8 +305,6 @@
                         </article>
 
                         <article class="span4">
-
-                            {{widget('space', 'space', {'height': '40'})|raw}}
 
                             {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
 

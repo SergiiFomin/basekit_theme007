@@ -311,7 +311,10 @@
         <div class="container">
             <div class="row">
                 <section class="span12">
+
                     <div class="row">
+
+                        {{widget('space', 'space', {'height': '40'})|raw}}
 
                         <article class="span8">
 
@@ -326,12 +329,13 @@
                         </article>
 
                         <article class="span4">
+
                             {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
 
                             {{widget('content', 'phone_text', {content: 'call us for reservation', lines: 'all'})|raw}}
 
                             {{widget('space', 'space', {'height': '30'})|raw}}
-                            
+
                         </article>
                     </div>
                 </section>
