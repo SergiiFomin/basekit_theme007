@@ -47,11 +47,11 @@
             <div class="row">
                 <article class="span12">
 
-                    {{widget('space', 'space', {'height': '48'})|raw}}
-
                     <div class="row divider3">
 
                         <article class="span6 about">
+
+                            {{widget('space', 'space', {'height': '48'})|raw}}
 
                             {{widget('content', 'title1', {content: '<h3>about us</h3>', lines: 'all'})|raw}}
 
@@ -70,8 +70,6 @@
                             </div>
 
                             {{zone('main')|raw}}
-
-                            {{widget('space', 'space', {'height': '30'})|raw}}
 
                             {{widget('content', 'title1', {content: '<h3>our team</h3>', lines: 'all'})|raw}}
 
@@ -204,8 +202,10 @@
                         </article>
 
                         <article class="span1"></article>
-                        
+
                         <article class="span5">
+
+                            {{widget('space', 'space', {'height': '48'})|raw}}
 
                             {{widget('content', 'title2', {content: '<h3>testimonials</h3>', lines: 'all'})|raw}}
 
@@ -298,8 +298,6 @@
                         </article>
 
                     </div>
-
-                    {{widget('space', 'space', {'height': '40'})|raw}}
 
                 </article>
 
