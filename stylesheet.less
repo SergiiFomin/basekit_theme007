@@ -283,7 +283,7 @@ header{
   background-position: center 0;
   background-repeat: repeat;
   position: relative;
-  padding: 48px 0 52px;
+  padding: 20px 0 52px;
 }
 
 body{
@@ -620,14 +620,16 @@ h1{
     a{
       color: @color-swatch3;
       text-decoration: none;
-      display: inline-block;
       position: relative;
+      overflow: hidden;
       &:hover{
         color: @color-swatch1;
       }
       .logo{
         float: left;
         margin: 0px;
+        font-size: 0;
+        line-height: 0;
         img{
           display: block;
         }
@@ -640,6 +642,7 @@ h1{
         color: @color-swatch1;
         text-transform: lowercase;
         padding: 0px;
+        text-shadow: 1px 1px 5px #5d5d5d;
       }
     }   
   }
