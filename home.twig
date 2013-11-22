@@ -14,7 +14,7 @@
 
                         <h1 class="brand">
                             
-                            {{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
 
                             {{widget('space', 'space', {'height': '30'})|raw}}
 
@@ -50,10 +50,12 @@
                 <article class="span12">
 
                     {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': false, 'showBullets': true, 'allowPause': false, 'allowLoop': false, 'images':[{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/503x1112', 'title':'test title', 'description': 'test desc'},{'imageHeight':'503', 'imageWidth':'1112', 'url':'http://placehold.it/350x1112', 'title':'test title', 'description': 'test desc'}]})|raw}}
+
+                    {{widget('space', 'space', {'height': '30'})|raw}}
                             
                     {{zone('main')|raw}}
 
-                    <div class="row divider2">
+                    <div class="row">
 
                         <article class="span7">
 
@@ -296,9 +298,7 @@
 
                             {{widget('companyname', 'companyname', {"business": "Rosso"})|raw}}
 
-                            {{widget('content', 'copyright_copy', {content: '&copy; &nbsp; 2013 &nbsp; All Rights Reserved &nbsp; | &nbsp; ', lines: 'all'})|raw}}
-
-                            {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                            {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
 
                             {{widget('space', 'space', {'height': '30'})|raw}}
 
@@ -306,7 +306,7 @@
 
                         <article class="span4">
 
-                            {{widget('content', 'phone', {content: '+1 800 123 45 67', lines: 'all'})|raw}}
+                            {{widget('profile', 'phone', { 'profileType':'phone' })|raw}}
 
                             {{widget('content', 'phone_text', {content: 'call us for reservation', lines: 'all'})|raw}}
 
